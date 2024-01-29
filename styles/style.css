@@ -46,8 +46,10 @@ body{
 }
 
 .apresentacao__conteudo__texto{
+    display: flex;;
     font-size: 1.2rem;
     font-family: var(--fonte-secundaria);
+    width: 100%;
 }
 
 .apresentacao__conteudo__assinatura{
@@ -84,3 +86,49 @@ body{
 	display: flex;
 	justify-content: space-between;
 }
+
+.mensagem__iframe{
+    width: 50%;
+    height: 300;
+}
+
+@media (max-width: 1200px){
+    .cabecalho__paginas{
+        justify-content: center;
+    }
+
+    .apresentacao {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .apresentacao__imagem{
+        padding: 0% 0% 0% 90%;
+        width: 30%;
+        opacity: 0.3;
+    }
+
+    .aprensetacao_paginas{
+        padding: 1% 1%;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+    }
+    .mensagem{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+    }
+
+    .mensagem__iframe{
+        width: auto;
+        height: auto;
+    }
+
+    .rodape_imagem{
+        padding: 10% 0% 0% 20%;
+        width: 10%;
+        opacity: 0.10;
+    }
+}
+
