@@ -21,7 +21,13 @@ body{
 
 .cabecalho{
     display: flex;
-    justify-content: right;}
+    justify-content: center;}
+
+    .cabecalho__align{
+        display: flex;
+        justify-content: center;
+        padding-left: 15%;
+    }
 
 .cabecalho__paginas{
 	display: flex;
