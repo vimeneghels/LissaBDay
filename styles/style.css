@@ -21,8 +21,7 @@ body{
 
 .cabecalho{
     display: flex;
-	padding: 0% 0% 0% 90%;
-}
+    justify-content: right;}
 
 .cabecalho__paginas{
 	display: flex;
@@ -30,7 +29,7 @@ body{
 }
 
 .cabecalho__imagem{
-	width: 90%;
+	width: 40%;
 }
 
 .apresentacao{
@@ -94,11 +93,22 @@ body{
 }
 
 @media (max-width: 1200px){
-   .cabecalho__menu{
-    display: flex;
-    justify-content: center;
-   }
-   
+    .cabecalho{
+        display: flex;
+        justify-content: center;
+    }
+
+    .cabecalho__align{
+        display: flex;
+        justify-content: center;
+        padding-left: 40%;
+        padding-top: 2%;
+    }
+
+    .cabecalho__imagem{
+        width: 40%;
+    }
+
     .cabecalho__paginas{
         display: flex;
         justify-content: center;
@@ -107,6 +117,12 @@ body{
     .apresentacao {
         display: flex;
         flex-direction: column;
+    }
+
+    .apresentacao__conteudo__titulo{
+        display: flex;
+        font-size: 1.9rem;
+        justify-content: center;
     }
 
     .apresentacao__imagem{
