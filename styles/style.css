@@ -20,12 +20,13 @@ body{
 }
 
 .cabecalho{
-    position: fixed;
+    display: flex;
 	padding: 0% 0% 0% 90%;
 }
 
 .cabecalho__paginas{
-	padding: 1% 0% 0% 45%;
+	display: flex;
+    justify-content: center;
 }
 
 .cabecalho__imagem{
@@ -93,7 +94,13 @@ body{
 }
 
 @media (max-width: 1200px){
+   .cabecalho__menu{
+    display: flex;
+    justify-content: center;
+   }
+   
     .cabecalho__paginas{
+        display: flex;
         justify-content: center;
     }
 
@@ -131,4 +138,3 @@ body{
         opacity: 0.10;
     }
 }
-
